@@ -10,15 +10,29 @@ Depending on your preferred package manager, follow the instructions below to de
 
 > **Requirements**: NodeJS `lts/fermium (v.14.15.0)`. If you're using [nvm](https://github.com/nvm-sh/nvm), run `nvm use` to ensure you're using the same Node version in local and in your lambda's runtime.
 
+### Using Packages
+
+- [node](https://nodejs.org/ja/)
+- [npm](https://www.npmjs.com/)
+- [serverless](https://www.serverless.com/)
+- [aws cli]()
+
 ### Using NPM
 
-- Run `npm i` to install the project dependencies
-- Run `npx sls deploy` to deploy this stack to AWS
+- Run `sudo npm install -g npm`
+- Run `brew install node`
+- Run `brew install serverless`
+- Run `brew install awscli`
 
-### Using Yarn
+## Set up aws credentials
 
-- Run `yarn` to install the project dependencies
-- Run `yarn sls deploy` to deploy this stack to AWS
+```
+$ aws configure
+AWS Access Key ID [None]: AWS access key
+AWS Secret Access Key [None]: AWS secret key
+Default region name [None]: ca-central-1
+Default output format [None]: prod
+```
 
 ## Test your service
 
@@ -93,3 +107,11 @@ The project code base is mainly located within the `src` folder. This folder is 
 ### Advanced usage
 
 Any tsconfig.json can be used, but if you do, set the environment variable `TS_NODE_CONFIG` for building the application, eg `TS_NODE_CONFIG=./tsconfig.app.json npx serverless webpack`
+
+# Note
+
+## To create project from scrach
+
+```
+$ sls create -t aws-nodejs-typescript -p this-will-be-a-project-name
+```
