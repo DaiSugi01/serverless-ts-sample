@@ -30,7 +30,7 @@ Depending on your preferred package manager, follow the instructions below to de
 ## Set up aws credentials
 
 ```
-$ aws configure
+$ aws configure --profile juno
 AWS Access Key ID [None]: AWS access key
 AWS Secret Access Key [None]: AWS secret key
 Default region name [None]: ca-central-1
