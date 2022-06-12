@@ -8,12 +8,12 @@ const serverlessConfiguration: AWS = {
   frameworkVersion: '3',
   plugins: ['serverless-esbuild'],
   provider: {
-    apiName: "daiki",
+    apiName: "this will be a api gateway name",
     name: 'aws',
     runtime: 'nodejs14.x',
     region: 'ca-central-1',
     profile: 'personal',
-    stage: 'production',
+    stage: 'This will be a api gateway staging name',
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
