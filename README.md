@@ -15,14 +15,17 @@ Depending on your preferred package manager, follow the instructions below to de
 - [node](https://nodejs.org/ja/)
 - [npm](https://www.npmjs.com/)
 - [serverless](https://www.serverless.com/)
-- [aws cli]()
+- [aws cli](https://aws.amazon.com/cli/?nc1=h_ls)
+
+### Using brew
+
+- Run `brew install node`
+- Run `brew install awscli`
 
 ### Using NPM
 
 - Run `sudo npm install -g npm`
-- Run `brew install node`
-- Run `brew install serverless`
-- Run `brew install awscli`
+- Run `sudo npm install -g serverless`
 
 ## Set up aws credentials
 
