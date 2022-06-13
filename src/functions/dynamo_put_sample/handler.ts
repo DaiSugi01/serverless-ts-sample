@@ -1,10 +1,9 @@
-import { formatJSONResponse } from '@libs/api-gateway';
 import { middyfy } from '@libs/lambda';
 import { APIGatewayProxyHandler } from 'aws-lambda';
 
 const AWS = require("aws-sdk");
 
-const hello: APIGatewayProxyHandler = async (event) => {
+const hello: APIGatewayProxyHandler = async (_) => {
   const docClient = new AWS.DynamoDB.DocumentClient();
   const userInformation = {
     TableName: "usersTable",

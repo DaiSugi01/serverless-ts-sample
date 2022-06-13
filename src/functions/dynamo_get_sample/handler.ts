@@ -4,7 +4,7 @@ import { APIGatewayProxyHandler } from 'aws-lambda';
 const AWS = require("aws-sdk");
 const USERS_TABLE = "usersTable"
 
-const hello: APIGatewayProxyHandler = async (event) => {
+const hello: APIGatewayProxyHandler = async (_) => {
   // Create the DynamoDB service object
   var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
 
