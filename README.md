@@ -37,6 +37,14 @@ Default region name [None]: ca-central-1
 Default output format [None]: prod
 ```
 
+## Adding new endpoint
+
+You can follow the direction to add a new endpoint.
+
+1. create new directory under the `./scr/functions/`.
+2. export handler in `./src/functions/index.ts`.
+3.
+
 ## Test your service
 
 This template contains a single lambda function triggered by an HTTP request made on the provisioned API Gateway REST API `/hello` route with `POST` method. The request body must be provided as `application/json`. The body structure is tested by API Gateway against `src/functions/hello/schema.ts` JSON-Schema definition: it must contain the `name` property.
